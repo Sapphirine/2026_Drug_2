@@ -4,7 +4,7 @@ Colab initialization helper.
 Usage at the top of every notebook:
 
     from src.colab_init import setup
-    PROJECT_ROOT = setup(repo_url="https://github.com/Jonathan-Ye-1/egfr-drug-design-eecs6895-final-project.git")
+    PROJECT_ROOT = setup(repo_url="https://github.com/Sapphirine/2026_Drug_2.git")
 
 This does:
   1. Mounts Google Drive at /content/drive

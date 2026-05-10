@@ -67,8 +67,8 @@ external/
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/Jonathan-Ye-1/egfr-drug-design-eecs6895-final-project.git
-cd egfr-drug-design-eecs6895-final-project
+git clone https://github.com/Sapphirine/2026_Drug_2.git
+cd 2026_Drug_2
 ```
 
 ### Step 2 — Create a conda environment
@@ -126,7 +126,7 @@ To run on **Google Colab**, replace the first cell of any notebook with:
 
 ```python
 from src.colab_init import setup
-PROJECT_ROOT = setup("https://github.com/Jonathan-Ye-1/egfr-drug-design-eecs6895-final-project.git")
+PROJECT_ROOT = setup("https://github.com/Sapphirine/2026_Drug_2.git")
 ```
 
 ---
