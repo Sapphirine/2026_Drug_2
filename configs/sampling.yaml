@@ -1,0 +1,26 @@
+sampling:
+  num_samples: 100          # per batch; run 10-15 batches for 1000+ total
+  batch_size: 50
+  num_steps: 1000           # diffusion timesteps
+  temperature: 1.0
+  guidance_scale: 1.0
+
+  # TargetDiff checkpoint (download to external/targetdiff/checkpoints/)
+  checkpoint: "external/targetdiff/checkpoints/pretrained_diffusion.pt"
+  config_file: "external/targetdiff/configs/sampling.yml"
+
+evaluation:
+  vina_exhaustiveness: 8    # quick pass; use 32 for Top-10 refinement
+  vina_num_modes: 9
+  top_k: 10
+
+  # Multi-criteria filter thresholds
+  vina_cutoff: -8.0         # kcal/mol
+  qed_cutoff: 0.5
+  sa_cutoff: 4.0
+  lipinski: true
+
+output:
+  generated_dir: "results/generated"
+  vina_dir: "results/vina_scores"
+  figures_dir: "results/figures"

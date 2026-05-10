@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.env
+.venv
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large data files (store in Google Drive)
+data/pdb/*.pdb
+data/pockets/*.pdb
+data/baselines/*.sdf
+results/generated/*.sdf
+results/generated/*.mol2
+results/vina_scores/*.pdbqt
+
+# Keep CSV results (small) in git
+!results/vina_scores/*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+.claude/
+
+# Logs
+*.log

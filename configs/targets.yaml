@@ -1,0 +1,37 @@
+targets:
+  wildtype:
+    name: "EGFR WT"
+    pdb_id: "1M17"
+    pdb_file: "data/pdb/1M17.pdb"
+    pocket_file: "data/pockets/1M17_pocket.pdb"
+    ligand_resname: "AQ4"       # Erlotinib in 1M17
+    pocket_radius: 10.0         # Angstroms around ligand center
+    receptor_pdbqt: "data/pdb/1M17_receptor.pdbqt"
+    box_center: null            # auto-computed from ligand center
+    box_size: [20.0, 20.0, 20.0]
+
+  mutant:
+    name: "EGFR T790M"
+    pdb_id: "4I22"
+    pdb_file: "data/pdb/4I22.pdb"
+    pocket_file: "data/pockets/4I22_pocket.pdb"
+    ligand_resname: "IRE"       # co-crystal ligand in 4I22
+    pocket_radius: 10.0
+    receptor_pdbqt: "data/pdb/4I22_receptor.pdbqt"
+    box_center: null
+    box_size: [20.0, 20.0, 20.0]
+
+baselines:
+  erlotinib:
+    # PubChem CID 176870 — 4-anilinoquinazoline scaffold
+    smiles: "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1"
+    name: "Erlotinib"
+    sdf_file: "data/baselines/erlotinib.sdf"
+  gefitinib:
+    smiles: "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1"
+    name: "Gefitinib"
+    sdf_file: "data/baselines/gefitinib.sdf"
+  osimertinib:
+    smiles: "C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C"
+    name: "Osimertinib"
+    sdf_file: "data/baselines/osimertinib.sdf"
